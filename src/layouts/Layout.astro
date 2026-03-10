@@ -1,5 +1,11 @@
 ---
 import '../styles/global.css';
+
+const title = 'Lucas Carioca';
+const description =
+	'Full stack engineer building AI-powered products, automation systems, and communication experiences.';
+const url = new URL(Astro.url.pathname, Astro.site);
+const ogImage = new URL('/favicon.svg', Astro.site);
 ---
 
 <!doctype html>
@@ -15,11 +21,19 @@ import '../styles/global.css';
 			href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
 		/>
 		<meta name="generator" content={Astro.generator} />
-		<meta
-			name="description"
-			content="Lucas Carioca is a Senior Full Stack Software Engineer focused on building custom AI agents."
-		/>
-		<title>Lucas Carioca | Full Stack Engineer</title>
+		<title>{title}</title>
+		<meta name="description" content={description} />
+		<link rel="canonical" href={url} />
+		<meta name="robots" content="index,follow" />
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={url} />
+		<meta property="og:image" content={ogImage} />
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:title" content={title} />
+		<meta name="twitter:description" content={description} />
+		<meta name="twitter:image" content={ogImage} />
 	</head>
 	<body class="font-sans antialiased">
 		<slot />
