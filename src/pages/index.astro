@@ -67,47 +67,29 @@ import Layout from '../layouts/Layout.astro';
 			</header>
 
 			<section class="mt-18 sm:mt-20">
-				<p class="max-w-2xl text-[1.05rem] leading-8 font-medium text-[color:var(--color-ink)] sm:text-[1.1rem]">
-					I build AI products for companies that want useful agents, better workflows, and
-					real systems people can actually rely on.
-				</p>
-			</section>
-
-			<section class="mt-8 max-w-2xl space-y-4 text-[15px] leading-8 text-[color:var(--color-ink-soft)]">
-				<p>
-					My work sits between product thinking and systems engineering: designing LLM-powered
-					experiences, agent workflows, and the backend infrastructure behind chat,
-					automation, integrations, and messaging.
-				</p>
-				<p>
-					I am most useful when a team has a strong idea for an AI product and needs someone to
-					turn it into a clear, working experience from prototype to production. If that sounds
-					like your project,
-					<a
+				<h1 class="mt-5 max-w-3xl whitespace-nowrap text-left text-[24px] leading-[1.02] font-semibold tracking-[-0.05em] text-[color:var(--color-ink)]">
+					Building
+					<span aria-hidden="true" class="inline-flex text-[0.9em] text-[color:var(--color-accent)]">
+						<span class="hero-dots">.</span>
+						<span class="hero-dots">.</span>
+						<span class="hero-dots">.</span>
+					</span>
+					<span
+						data-rotating-action
+						aria-live="polite"
+						class="inline-flex whitespace-nowrap justify-start text-left text-[color:var(--color-accent)] transition-opacity duration-500"
+					>
+						AI products
+					</span>
+				</h1>
+				<p class="mt-6 max-w-2xl text-[15px] leading-8 text-[color:var(--color-ink-soft)] sm:text-base">
+					If you're making an AI product and need help, <a
 						class="border-b border-transparent text-[color:var(--color-ink)] transition hover:border-[color:var(--color-accent)] hover:text-[color:var(--color-accent)]"
 						href="mailto:lucascarioca97@gmail.com"
 					>
 						get in touch
 					</a>.
 				</p>
-			</section>
-
-			<section class="mt-12 max-w-2xl">
-				<p class="text-xs uppercase tracking-[0.28em] text-[color:var(--color-accent)]">What I do</p>
-				<ul class="mt-5 space-y-3 text-[15px] leading-8 text-[color:var(--color-ink-soft)]">
-					<li class="flex items-start gap-3">
-						<span class="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-[color:var(--color-accent)]"></span>
-						<span>Build AI agents, chat experiences, and automation workflows around real business needs.</span>
-					</li>
-					<li class="flex items-start gap-3">
-						<span class="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-[color:var(--color-accent)]"></span>
-						<span>Design the systems behind AI products: prompts, tools, integrations, messaging, and operational flows.</span>
-					</li>
-					<li class="flex items-start gap-3">
-						<span class="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-[color:var(--color-accent)]"></span>
-						<span>Turn complex AI behavior into clean product interfaces teams and customers can actually use.</span>
-					</li>
-				</ul>
 			</section>
 
 			<section class="mt-18 sm:mt-20">
@@ -129,13 +111,13 @@ import Layout from '../layouts/Layout.astro';
 						href="https://github.com/lucasscarioca/lazycompass"
 						target="_blank"
 						rel="noreferrer"
-						>
-							<div class="max-w-2xl">
-							<h2 class="text-2xl font-semibold tracking-[-0.04em] text-[color:var(--color-ink)] transition group-hover:text-[color:var(--color-accent)]">
+					>
+						<div class="max-w-2xl">
+							<h2 class="text-[18px] font-semibold tracking-[-0.04em] text-[color:var(--color-ink)] transition group-hover:text-[color:var(--color-accent)]">
 								lazycompass
 							</h2>
 							<p class="mt-3 max-w-xl text-base leading-8 text-[color:var(--color-ink-soft)] transition group-hover:text-[color:var(--color-ink)]">
-								Developer tool focused on operational clarity: faster MongoDB workflows, reusable queries, and less friction around day-to-day data work.
+								A CLI for faster MongoDB workflows and less friction in day-to-day data work.
 							</p>
 							<p class="mt-3 text-sm text-[color:var(--color-ink-soft)]">
 								Rust / CLI / MongoDB / Open source
@@ -152,11 +134,11 @@ import Layout from '../layouts/Layout.astro';
 						rel="noreferrer"
 					>
 						<div class="max-w-2xl">
-							<h2 class="text-2xl font-semibold tracking-[-0.04em] text-[color:var(--color-ink)] transition group-hover:text-[color:var(--color-accent)]">
+							<h2 class="text-[18px] font-semibold tracking-[-0.04em] text-[color:var(--color-ink)] transition group-hover:text-[color:var(--color-accent)]">
 								gram-agent
 							</h2>
 							<p class="mt-3 max-w-xl text-base leading-8 text-[color:var(--color-ink-soft)] transition group-hover:text-[color:var(--color-ink)]">
-								Starter for shipping Telegram-based AI agents on Cloudflare Workers, with a clean foundation for tools, messaging, and automation.
+								A starter for shipping Telegram AI agents on Cloudflare Workers.
 							</p>
 							<p class="mt-3 text-sm text-[color:var(--color-ink-soft)]">
 								TypeScript / Telegram / Cloudflare Workers / Open source
@@ -173,11 +155,11 @@ import Layout from '../layouts/Layout.astro';
 						rel="noreferrer"
 					>
 						<div class="max-w-2xl">
-							<h2 class="text-2xl font-semibold tracking-[-0.04em] text-[color:var(--color-ink)] transition group-hover:text-[color:var(--color-accent)]">
+							<h2 class="text-[18px] font-semibold tracking-[-0.04em] text-[color:var(--color-ink)] transition group-hover:text-[color:var(--color-accent)]">
 								artifacts
 							</h2>
 							<p class="mt-3 max-w-xl text-base leading-8 text-[color:var(--color-ink-soft)] transition group-hover:text-[color:var(--color-ink)]">
-								Curated coding utilities, agent presets, extensions, skills, and prompt templates I use day to day to organize my AI coding setup.
+								My toolkit for Pi agents, skills, and prompt templates.
 							</p>
 							<p class="mt-3 text-sm text-[color:var(--color-ink-soft)]">
 								Pi / Agent tooling / Open source
@@ -201,4 +183,76 @@ import Layout from '../layouts/Layout.astro';
 			</footer>
 		</div>
 	</main>
+
+	<script>
+		const actions = [
+			'AI products',
+			'production agents',
+			'automation workflows',
+			'messaging systems',
+			'RAG pipelines',
+			'MCP servers',
+			'eval pipelines',
+			'LLM observability',
+			'developer tools',
+			'multi-agent systems',
+			'full-stack solutions',
+		];
+		const element = document.querySelector('[data-rotating-action]');
+
+		if (element instanceof HTMLElement && window.matchMedia('(prefers-reduced-motion: no-preference)').matches) {
+			let index = 0;
+			const duration = 2800;
+			const fade = 350;
+
+			const tick = () => {
+				element.style.opacity = '0';
+
+				window.setTimeout(() => {
+					index = (index + 1) % actions.length;
+					element.textContent = actions[index];
+					element.style.opacity = '1';
+				}, fade);
+			};
+
+			window.setInterval(tick, duration);
+		}
+	</script>
+
+	<style>
+		.hero-dots {
+			animation: hero-dots 1.2s infinite ease-in-out;
+			display: inline-block;
+		}
+
+		.hero-dots:nth-child(2) {
+			animation-delay: 0.15s;
+		}
+
+		.hero-dots:nth-child(3) {
+			animation-delay: 0.3s;
+		}
+
+		.hero-dots:nth-child(4) {
+			animation-delay: 0.45s;
+		}
+
+		@keyframes hero-dots {
+			0%,
+			80%,
+			100% {
+				opacity: 0.25;
+			}
+
+			40% {
+				opacity: 1;
+			}
+		}
+
+		@media (prefers-reduced-motion: reduce) {
+			.hero-dots {
+				animation: none;
+			}
+		}
+	</style>
 </Layout>
